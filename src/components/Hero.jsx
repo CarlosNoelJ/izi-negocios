@@ -13,7 +13,6 @@ const Hero = () => (
       <a href="https://wa.me/message/HCA7K3K5XSVUJ1" className="btn-get-started scrollto"><img src={Whatsapp} className="img" alt=""/><span>Mira las ofertas que tenemos para ti</span></a>
 
     </div>
-
   </section>
 )
 
