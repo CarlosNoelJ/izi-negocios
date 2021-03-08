@@ -29,7 +29,6 @@ const Products = () => (
                 <li> Batería de <span>larga duración.</span></li>
               </ul>
               <h4><sup>S/.</sup>95</h4>
-              {/* <a href="#" className="get-started-btn">Get Started</a> */}
             </div>
           </div>
 
@@ -45,8 +44,7 @@ const Products = () => (
                 <li> <span>No necesitas</span> un celular para funcionar.</li>
                 <li> Recibe las copias de los <span>voucher por correo.</span></li>
               </ul>
-              <h4><sup>S/.</sup>198</h4>
-              {/* <a href="#" className="get-started-btn">Get Started</a> */}
+              <h4><sup>S/.</sup>148</h4>
             </div>
           </div>
 
@@ -61,8 +59,7 @@ const Products = () => (
                 <li> Imprime el voucher o <span>envíalo por SMS o correo electrónico.</span></li>
                 <li> POS <span>mobil</span></li>
               </ul>
-              <h4><sup>S/.</sup>398</h4>
-              {/* <a href="#" className="get-started-btn">Get Started</a> */}
+              <h4><sup>S/.</sup>198</h4>
             </div>
           </div>
 
