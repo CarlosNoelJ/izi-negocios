@@ -29,6 +29,7 @@ const Products = () => (
                 <li> Batería de <span>larga duración.</span></li>
               </ul>
               <h4><sup>S/.</sup>95</h4>
+              <h6>Se aplica terminos y condiciones</h6>
             </div>
           </div>
 
@@ -45,6 +46,7 @@ const Products = () => (
                 <li> Recibe las copias de los <span>voucher por correo.</span></li>
               </ul>
               <h4><sup>S/.</sup>148</h4>
+              <h6>Se aplica terminos y condiciones</h6>
             </div>
           </div>
 
@@ -60,6 +62,7 @@ const Products = () => (
                 <li> POS <span>mobil</span></li>
               </ul>
               <h4><sup>S/.</sup>198</h4>
+              <h6>Se aplica terminos y condiciones</h6>
             </div>
           </div>
 

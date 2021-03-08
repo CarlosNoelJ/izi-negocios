@@ -46,7 +46,6 @@ class Hero extends React.Component {
   }
 
   handleButtonClicked(){
-      console.log(this.state.form)
 
       const URL = 'https://wa.me';
       const numeroRepresentante = 51958805677;
@@ -54,9 +53,16 @@ class Hero extends React.Component {
       const nombre = this.state.form.nombre;
       const correo = this.state.form.correo;
       const celular = this.state.form.celular;
+      var url = "";
 
-      var url = `${URL}/${numeroRepresentante}`;
-      url += `?text=DNI o RUC:%20${id}%0ANombre%20Completo:%20${nombre}%0ACorreo:%20${correo}%0ANumero%20de%20Contacto:%20${celular}`;
+      if (id == "" || nombre == "" || correo == "" || celular == "") {
+        url = "";  
+      }
+      else{
+        url = `${URL}/${numeroRepresentante}`;
+        url += `?text=DNI o RUC:%20${id}%0ANombre%20Completo:%20${nombre}%0ACorreo:%20${correo}%0ANumero%20de%20Contacto:%20${celular}`;
+      }
+      
       this.setState({linkWp:url})
   }
 
@@ -70,16 +76,16 @@ class Hero extends React.Component {
 
           <form className="formulario">
               <div className="form-group row">
-                <input className="form-control" placeholder="DNI o RUC" value={this.state.form.id} onChange={this.handleIdChanged.bind(this)} type="number"/>
+                <input className="form-control" placeholder="DNI o RUC" value={this.state.form.id} onChange={this.handleIdChanged.bind(this)} type="number" required/>
               </div>
               <div className="form-group row">
-                <input className="form-control" placeholder="Nombre Completo"  value={this.state.form.nombre} onChange={this.handleNombreChanged.bind(this)} type="text"/>
+                <input className="form-control" placeholder="Nombre Completo"  value={this.state.form.nombre} onChange={this.handleNombreChanged.bind(this)} type="text" required/>
               </div>
               <div className="form-group row">
-                <input className="form-control" placeholder="celular"  value={this.state.form.celular} onChange={this.handleCelularChanged.bind(this)} type="number"/>
+                <input className="form-control" placeholder="celular"  value={this.state.form.celular} onChange={this.handleCelularChanged.bind(this)} type="number" required/>
               </div>
               <div className="form-group row">
-                <input className="form-control" placeholder="correo" value={this.state.form.correo} onChange={this.handleCorreoChanged.bind(this)} type="email"/>
+                <input className="form-control" placeholder="correo" value={this.state.form.correo} onChange={this.handleCorreoChanged.bind(this)} type="email" required/>
               </div>
           </form>
 
