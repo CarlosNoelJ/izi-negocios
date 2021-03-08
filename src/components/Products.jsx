@@ -28,7 +28,7 @@ const Products = () => (
                 <li> Envía el voucher por <span>correo, SMS o redes sociales.</span></li>
                 <li> Batería de <span>larga duración.</span></li>
               </ul>
-              <h4><sup>S/.</sup>98</h4>
+              <h4><sup>S/.</sup>95</h4>
               {/* <a href="#" className="get-started-btn">Get Started</a> */}
             </div>
           </div>
