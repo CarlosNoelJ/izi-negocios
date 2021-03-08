@@ -24,8 +24,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development --env development"
+    "build": "webpack",
+    "start": "webpack serve"
   },
   "eslintConfig": {
     "extends": [
