@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
     "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
     "hooks": "^0.3.2",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
@@ -24,9 +25,11 @@
     "node": "12.18.3"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
-    "start": "webpack serve --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack serve --mode development",
+    "postinstall": "webpack -p",
+    "start": "node server.js",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
